@@ -18,6 +18,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.eclipse.core.runtime.Assert;
+import org.eclipse.core.runtime.AssertionFailedException;
 import org.eclipse.core.runtime.Platform;
 import org.eclipse.jface.text.BadLocationException;
 import org.eclipse.jface.text.BadPositionCategoryException;
@@ -343,6 +344,8 @@ public class StructuredPresentationReconciler implements IPresentationReconciler
 					// can not happen
 				} catch (BadPositionCategoryException x) {
 					// should not happen on input elements
+				} catch (AssertionFailedException x){
+					// may be thrown from TypedPosition constructor
 				}
 			}
 		}

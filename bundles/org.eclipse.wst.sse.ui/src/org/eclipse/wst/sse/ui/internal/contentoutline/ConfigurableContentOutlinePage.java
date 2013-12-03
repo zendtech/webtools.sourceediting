@@ -422,7 +422,7 @@ public class ConfigurableContentOutlinePage extends ContentOutlinePage implement
 		if (statusLineManager != null) {
 			statusLineManager.setMessage(null);
 		}
-		setConfiguration(NULL_CONFIGURATION);
+
 		super.dispose();
 	}
 
