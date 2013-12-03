@@ -403,6 +403,9 @@ public class DirtyRegionProcessor implements IReconciler, IReconcilerExtension, 
 			catch (BadLocationException e) {
 				String info = "dr: [" + offset + ":" + length + "] doc: [" + docLen + "] "; //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$
 				Logger.logException(info, e);
+			} 
+			catch (ArrayIndexOutOfBoundsException e) {
+				// Concurrent thread access may cause ArrayIndexOutOfBoundsException
 			}
 		}
 		return durty;
