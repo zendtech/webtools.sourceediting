@@ -40,13 +40,17 @@ public class AnnotationFileRegistry {
 			fileInfos = new ArrayList();
 			map.put(publicId, fileInfos);
 		}
-		fileInfos.add(fileInfo);
+		synchronized (fileInfos) {
+			fileInfos.add(fileInfo);
+		}
 	}
 
 	public synchronized void removeAnnotationFile(String publicId, AnnotationFileInfo fileInfo) {
 		List fileInfos = (List) map.get(publicId);
 		if (fileInfos != null) {
-			fileInfos.remove(fileInfo);
+			synchronized (fileInfos) {
+				fileInfos.remove(fileInfo);
+			}
 		}
 	}
 }

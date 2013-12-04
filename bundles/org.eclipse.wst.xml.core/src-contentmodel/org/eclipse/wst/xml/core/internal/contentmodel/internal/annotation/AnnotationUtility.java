@@ -29,14 +29,16 @@ public class AnnotationUtility {
 		List annotationFiles = ContentModelManager.getInstance().getAnnotationFilesInfos(publicId);
 		AnnotationMap map = (AnnotationMap) cmDocument.getProperty("annotationMap"); //$NON-NLS-1$
 		if (map != null) {
-			for (Iterator i = annotationFiles.iterator(); i.hasNext();) {
-				try {
-					AnnotationFileInfo annotationFileInfo = (AnnotationFileInfo) i.next();
-					AnnotationFileParser parser = new AnnotationFileParser();
-					parser.parse(map, annotationFileInfo);
-				}
-				catch (Exception e) {
-					Logger.logException(e);
+			synchronized (annotationFiles) {
+				for (Iterator i = annotationFiles.iterator(); i.hasNext();) {
+					try {
+						AnnotationFileInfo annotationFileInfo = (AnnotationFileInfo) i.next();
+						AnnotationFileParser parser = new AnnotationFileParser();
+						parser.parse(map, annotationFileInfo);
+					}
+					catch (Exception e) {
+						Logger.logException(e);
+					}
 				}
 			}
 		}
