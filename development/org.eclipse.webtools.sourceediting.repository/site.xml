@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/org.eclipse.wst.xml_ui.feature.patch_3.4.2.jar" id="org.eclipse.wst.xml_ui.feature.patch" version="3.4.2" patch="true">
+   <feature url="features/org.eclipse.wst.xml_ui.feature.patch_3.4.2.qualifier.jar" id="org.eclipse.wst.xml_ui.feature.patch" version="3.4.2.qualifier" patch="true">
+      <category name="webtools.sourceediting"/>
+   </feature>
+   <feature url="features/org.eclipse.wst.xml_core.feature.patch_3.4.2.qualifier.jar" id="org.eclipse.wst.xml_core.feature.patch" version="3.4.2.qualifier" patch="true">
       <category name="webtools.sourceediting"/>
    </feature>
    <category-def name="webtools.sourceediting" label="WTP Source Editing"/>

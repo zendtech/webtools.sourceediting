@@ -232,6 +232,7 @@
     <!-- module>features/org.eclipse.wst.web_sdk.feature</module-->
     <module>features/org.eclipse.wst.web_ui.feature</module>
     <module>features/org.eclipse.wst.xml_core.feature</module>
+    <module>features/org.eclipse.wst.xml_core.feature.patch</module>
     <!-- module>features/org.eclipse.wst.xml_sdk.feature</module-->
     <module>features/org.eclipse.wst.xml_ui.feature</module>
     <module>features/org.eclipse.wst.xml_ui.feature.patch</module>

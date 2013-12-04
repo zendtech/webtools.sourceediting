@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="org.eclipse.wst.xml_ui.feature.patch"
+      id="org.eclipse.wst.xml_core.feature.patch"
       label="%featureName"
       version="3.4.2.qualifier"
       provider-name="%providerName">
@@ -18,11 +18,11 @@
    </license>
 
    <requires>
-      <import feature="org.eclipse.wst.xml_ui.feature" version="3.4.2.v201211061806-7H7GFeJDxumUrsn5qkiQgOEhsz0p60HAmPyU6VX" patch="true"/>
+      <import feature="org.eclipse.wst.xml_core.feature" version="3.4.2.v201211061806-7C7OFm9F7RZHQVHiOz-P0Up" patch="true"/>
    </requires>
 
    <plugin
-         id="org.eclipse.wst.sse.ui"
+         id="org.eclipse.wst.xml.core"
          download-size="0"
          install-size="0"
          version="0.0.0"

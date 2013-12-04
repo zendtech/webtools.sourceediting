@@ -21,7 +21,7 @@
   </parent>
 
   <groupId>org.eclipse.webtools.sourceediting</groupId>
-  <artifactId>org.eclipse.wst.xml_ui.feature.patch</artifactId>
+  <artifactId>org.eclipse.wst.xml_core.feature.patch</artifactId>
   <version>3.4.2-SNAPSHOT</version>
   <packaging>eclipse-feature</packaging>
 </project>
