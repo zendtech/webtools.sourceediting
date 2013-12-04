@@ -192,7 +192,7 @@ public CMDocument getCMDocument(String publicId, String systemId, String type)
       {     
         if (getPropertyEnabled(PROPERTY_AUTO_LOAD))
         {
-          cmDocument = loadCMDocument(publicId, resolvedURI, type, getPropertyEnabled(PROPERTY_ASYNC_LOAD));
+        	cmDocument = loadCMDocument(publicId, resolvedURI, type, true);
         }
       }
     }
@@ -252,6 +252,7 @@ public CMDocument getCMDocument(String publicId, String systemId, String type)
           return Status.OK_STATUS;
         }
       };
+      job.setSystem(true);
       job.schedule();
     }
     else
