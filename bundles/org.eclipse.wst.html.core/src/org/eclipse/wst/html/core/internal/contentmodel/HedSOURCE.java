@@ -23,7 +23,7 @@ import org.eclipse.wst.xml.core.internal.contentmodel.CMDataType;
 /**
  * SOURCE.
  */
-final class HedSOURCE extends HTMLElemDeclImpl {
+final class HedSOURCE extends HedEmpty {
 
 	private static String[] terminators = {HTML50Namespace.ElementName.SOURCE};
 
