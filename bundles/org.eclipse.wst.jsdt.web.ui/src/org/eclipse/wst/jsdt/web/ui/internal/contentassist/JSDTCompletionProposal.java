@@ -106,9 +106,9 @@ public class JSDTCompletionProposal extends JavaCompletionProposal implements IJ
 		fJavaCompletionProposal = javaCompletionProposal;
 	}
 	
-	protected boolean isValidPrefix(String prefix) {
+	public boolean isValidPrefix(String prefix) {
 		if (this.fJavaCompletionProposal instanceof LazyJavaTypeCompletionProposal) {
-			return ((LazyJavaTypeCompletionProposal) this.fJavaCompletionProposal).isValidTypePrefix(prefix);
+			return ((LazyJavaTypeCompletionProposal) this.fJavaCompletionProposal).isValidPrefix(prefix);
 		}
 		return super.isValidPrefix(prefix);
 	}
