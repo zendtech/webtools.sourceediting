@@ -66,6 +66,11 @@
       <url>${wtp-repo.url}</url>
       <layout>p2</layout>
     </repository>
+    <repository>
+      <id>jsdt Zend</id>
+      <url>http://il-studiodev2.zend.net:8080/view/ZendStudio-patches/job/zend-jsdt/lastSuccessfulBuild/artifact/webtools.jsdt.core/releng/target/repository/</url>
+      <layout>p2</layout>
+    </repository>
   </repositories>
 
   <pluginRepositories>
