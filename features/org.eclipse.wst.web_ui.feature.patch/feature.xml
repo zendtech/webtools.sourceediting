@@ -20,9 +20,12 @@
       %license
    </license>
 
+   <includes
+         id="org.eclipse.wst.jsdt.feature.patch"
+         version="0.0.0"/>
+
    <requires>
       <import feature="org.eclipse.wst.web_ui.feature" version="3.4.2.v201211061806-7O7MFu3EMkBK01NbrfU9ATE5cdZFz-OoeYjaI4d2" patch="true"/>
-      <import feature="org.eclipse.wst.jsdt.feature.patch" version="1.5.0.201406182054" match="greaterOrEqual"/>
    </requires>
 
    <plugin
